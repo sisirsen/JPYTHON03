@@ -1,10 +1,10 @@
-[
+const data = [
     {
         "id": 1,
         "name": "Modern Professional",
         "category": "Corporate",
         "isPremium": false,
-        "thumbnail": "/templates/modern-professional.png",
+        "thumbnail": "./assets/images/templates/resume1.png",
         "colors": {
             "primary": "#111827",
             "secondary": "#6B7280",
@@ -138,3 +138,5 @@
         "description": "Premium template designed for senior executives and managers."
     }
 ]
+
+export default data;
