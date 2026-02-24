@@ -2,9 +2,9 @@ export function navbar() {
     return `
         <nav class="flex items-center justify-between px-10 py-4 bg-white shadow-sm">
 
-            <div class="flex items-center space-x-2">
+            <a href='index.html' class="flex items-center space-x-2">
                 <img class="w-40" src="./assets/logo.png" alt="Logo">
-            </div>
+            </a>
 
             <div class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
                 <a href="#" class="hover:text-black transition">Dashboard</a>
