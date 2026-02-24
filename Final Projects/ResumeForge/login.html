@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="js/auth.js"></script>
 </head>
 
-<body class="bg-gray-600 grid place-content-center h-screen">
+<body class="">
+
+  <div id="render-nav"></div>
 
   <div class="bg-white shadow-2xl h-[600px] w-[600px] rounded-md flex flex-col">
 
-   
+
     <div class="text-purple-700 text-5xl font-semibold pt-[20px] pl-[30px]">
       ResumeForge AI
     </div>
@@ -24,50 +28,39 @@
       Login To Your Account
     </div>
 
-    
+
     <div class="mt-[40px] ml-[30px]">
       <label class="text-[18px] font-semibold">Email</label><br>
-      <input
-        class="mt-[10px] border p-[20px] text-[15px] border-blue-600 rounded-sm h-[30px] w-[500px] font-mono"
-        type="email"
-        placeholder="📧 Enter Your Valid Email id"
-        required
-      >
+      <input class="mt-[10px] border p-[20px] text-[15px] border-blue-600 rounded-sm h-[30px] w-[500px] font-mono"
+        type="email" placeholder="📧 Enter Your Valid Email id" required>
     </div>
 
     <div class="mt-[40px] ml-[30px] relative">
       <label class="text-[18px] font-semibold">Password</label><br>
 
-      <input
-        id="password"
+      <input id="password"
         class="mt-[10px] border p-[20px] text-[15px] border-blue-600 rounded-sm h-[30px] w-[500px] font-mono"
-        type="password"
-        placeholder="🗝️ Enter Your Valid Password"
-        required
-      >
+        type="password" placeholder="🗝️ Enter Your Valid Password" required>
 
-      
-      <img
-        id="togglePassword"
-        src="https://cdn-icons-png.flaticon.com/128/5618/5618479.png"
-        class="ml-[465px] -mt-[33px] h-[25px] w-[25px]"
-        alt=""
-      >
+
+      <img id="togglePassword" src="https://cdn-icons-png.flaticon.com/128/5618/5618479.png"
+        class="ml-[465px] -mt-[33px] h-[25px] w-[25px]" alt="">
     </div>
 
-    
+
     <div class="mt-[30px] ml-[34px] font-bold text-[14px] text-violet-800">
       <a href="#">Forgot Password</a>
     </div>
 
-    
-    <div class="mt-[55px] ml-[30px] text-center border h-[45px] w-[510px] pt-[6px] text-[17px] font-mono font-semibold bg-blue-700 text-white cursor-pointer hover:bg-blue-800 transition">
+
+    <div
+      class="mt-[55px] ml-[30px] text-center border h-[45px] w-[510px] pt-[6px] text-[17px] font-mono font-semibold bg-blue-700 text-white cursor-pointer hover:bg-blue-800 transition">
       <a href="#">Login Now</a>
     </div>
 
   </div>
 
-  
+
   <script>
     const passwordInput = document.getElementById("password");
     const toggleIcon = document.getElementById("togglePassword");
@@ -84,4 +77,5 @@
   </script>
 
 </body>
+
 </html>
