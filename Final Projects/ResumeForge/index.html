@@ -3,33 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Resume Forge AI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Resume Forge AI</title>
-
+    <script type="module" src="js/main.js"></script>
 </head>
 
-<body>
-    <nav class="flex items-center justify-between p">
-        <div>
-            <img class="w-60" src="./assets/logo.png" alt="">
+<body class="bg-gray-50 font-sans">
+
+    <div id="render-nav">
+
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <section class="flex flex-col items-center justify-center text-center px-6 py-24">
+
+        <h2 class="text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl">
+            Build Professional Resumes <br> with AI in Minutes
+        </h2>
+
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl">
+            Create job-winning resumes effortlessly using AI-powered templates.
+            Customize, download, and get hired faster.
+        </p>
+
+        <div class="mt-8 flex space-x-4">
+            <button class="px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+                Create Resume
+            </button>
+
+            <button class="px-8 py-3 border border-black rounded-full hover:bg-black hover:text-white transition">
+                View Templates
+            </button>
         </div>
 
-        <div class="flex items-center space-x-[16px]">
-            <a href="">Dashboard1</a>
-            <a href="">Dashboard2</a>
-            <input class="border-[2px] h-[40px] border-black rounded-xl pl-[10px] pb-[3px] font-bold" type="text" placeholder="Search Anything...">
+    </section>
 
-            <a href="#"><img class="h-[20px] w-[20px]" src="https://cdn-icons-png.flaticon.com/128/667/667332.png" alt=""></a>
 
-            <div>
-                <a href="">
-                    <button class="ml-">Login/Register</button>
-                </a>
-            </div>
+
+    <!-- TEMPLATES SECTION -->
+    <section class="bg-white py-20 px-10">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-gray-900">
+                Choose Your Resume Template
+            </h2>
+            <p class="text-gray-600 mt-4">
+                Professionally designed templates to help you stand out.
+            </p>
         </div>
-    </nav>
+
+        <!-- Template Cards -->
+
+
+    </section>
 
 </body>
+
 
 </html>
